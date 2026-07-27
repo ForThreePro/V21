@@ -78,7 +78,7 @@ export default {
       await sock.sendMessage(msg.chat, mensaje, { quoted: msg })
 
     } catch (e) {
-      await msg.reply(msgglobal)
+      await msg.reply(msgglobal + e)
     }
   }
 }
